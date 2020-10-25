@@ -2,8 +2,12 @@ window.onload = function(){
 
     button = document.querySelector('.hamburger')
     let answers = [0,0,0,0];
-    let carType = ['Drift Car','Super Car','Tuner Car','Muscle Car']
-    let result = 0
+    let carType = [
+        {name: 'Drift car', value: 0},
+        {name: 'Super car', value: 0},
+        {name: 'Tuner car', value: 0},
+        {name: 'Muscle car', value: 0}]
+    let result = []
 
     const questions = [
         {
@@ -45,23 +49,21 @@ window.onload = function(){
             choice.innerHTML = `${questions[i].choices[j]}`
             document.querySelector(`#id${i}`).appendChild(choice);
             choice.onclick = function (){
-                answers[j]++;
-                result = answers.reduce( (a,b) => {
-                    return Math.max(a,b)
-                });
-                console.log(answers.indexOf(result))
+            carType[j].value += 1
+               
             }
-
         }
 
-        
     }
+
+    
 
     let submit = document.querySelector('#quizSubmit')
     let displayResult = document.querySelector('#quizResult')
     submit.onclick = function handleClick(){
 
-        displayResult.innerHTML = `${carType[result]}`
+        result = carType.sort( (a,b) => {return b.value - a.value})
+        displayResult.innerHTML = `${result[0].name}`
 
     }
     

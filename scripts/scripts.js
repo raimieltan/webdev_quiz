@@ -9,10 +9,12 @@ window.onload = function(){
         {name: 'Muscle car', value: 0}]
     let result = []
 
+    //to change the question just change the question property of each object
+    //to change choices change the choices property 
     const questions = [
         {
-            question: "Labore culpa cupidatat nostrud ad?",
-            choices: ["a","b","c","d"]
+            question: "What is your fave fast and furious movie?",
+            choices: ["Tokyo Drift","Fast and furious 6","2 Fast 2 furious","Fast and furious 1"]
         },
         {
             question: "Voluptate ea occaecat occaecat dolor sunt adipisicing proident qui proident laborum?",
@@ -50,6 +52,7 @@ window.onload = function(){
             document.querySelector(`#id${i}`).appendChild(choice);
             choice.onclick = function (){
             carType[j].value += 1
+            quizDiv.style.display = "none";
                
             }
         }

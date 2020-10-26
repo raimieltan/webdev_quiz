@@ -18,6 +18,10 @@ a {
  
     
 }
+
+.resultContainer {
+    text-align: center;
+}
 .title {
 
     flex: 20;

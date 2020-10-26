@@ -1,7 +1,7 @@
 window.onload = function () {
 
     button = document.querySelector('.hamburger')
-    let answers = [0, 0, 0, 0];
+
     let carType = [
         { name: 'Drift car', 
         value: 0, 
@@ -9,28 +9,28 @@ window.onload = function () {
         offering a large range of power levels. There have also been all-wheel drive cars that have been converted 
         to rear-wheel drive such as the Subaru WRX, Toyota Avensis, Scion tC, Mitsubishi Lancer Evolution and 
         Nissan GT-R.`, 
-        image: "../scripts/drift-car.jpg" 
+        image: "../images/drift-car.jpg" 
         },
 
         { name: 'Luxury car', 
         value: 0,
         description: `A luxury vehicle provides increased levels of comfort, equipment, amenities, quality, 
         performance, and status relative to regular cars for an increased price.`, 
-        image: "../scripts/luxury-car.jpg"
+        image: "../images/luxury-car.jpg"
         },
 
         { name: 'Tuner car', value: 0,
         description: `A Tuner car is a vehicle with modifications and replaced OEM (original engine manufacture) parts. 
         Sometimes swapped with custom or performance oriented upgrades or even changing parts to make a more powerful 
         and efficient vehicle; tuned.`,
-        image: "../scripts/tuner-car.jpg" 
+        image: "../images/tuner-car.jpg" 
         },
 
         { name: 'Muscle car', 
         value: 0,
         description: `Muscle car is a term for high-performance American coupes, usually but not limited to rear-wheel drive 
         and fitted with a high-displacement V8 engine.`,
-        image: "../scripts/muscle-car.jpg"
+        image: "../images/muscle-car.jpg"
         }
     ]
 

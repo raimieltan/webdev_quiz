@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-
-    <div class="mainContainer">
-
-        <div class='header'>
-            <h1 class="title">Test</h1>
-            <button class="hamburger">H</button>
-    
-        </div>
-        <div class="sidebar">
-            <a href="">dummy</a>
-            <a href="">dummy</a>
-            <a href="">dummy</a>
-        </div>
-    
-        <div>
-            <h1 style="text-align: center;">Kunyari may quiz</h1>
-        </div>
-
-        <div class="quiz"></div>
-
-        <div class="resultContainer">
-            <button id="quizSubmit" type="button">Submit</button>
-            <h1 id="quizResult"></h1>
-
-        </div>
-
-
-
+    <h1>What Car Do You Drive?</h1>
+    <h4> Fast and Furious Edition</h4>
+    <div class="header">
+        <button class="hamburger"> <img src="../scripts/hamburger-icon.png" id="hamburgerIcon"></button>
     </div>
-    
 
+    <div class="sidebar">
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+    </div>  
+    
+    <div class="mainContainer">
+        <h1>Questions</h1>     
+        <div class="quiz"></div>
+    </div>
+
+    <div class="resultContainer">
+        <h1>Quiz Result</h1>            
+        <h3 id="quizResult"></h3>
+    </div>
 
     <script src="../scripts/scripts.js"></script>
 </body>
+
 </html>

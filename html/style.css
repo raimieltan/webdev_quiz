@@ -1,61 +1,192 @@
-.header {
-    display: flex;
-    width: 100%;
-    background-color: slategrey;
-    flex-direction: row;
-}
-.mainContainer {
-    border: 1px solid black;
-}
 a {
+    border: 2px solid dimgray;
     text-align: center;
     background-color: black;
     color: wheat;
-    padding: 8px 8px 8px 32px;
+    padding: 8px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     display: block;
- 
-    
+    margin: 5px;
+    border-radius: 5px;
 }
 
-.resultContainer {
-    text-align: center;
+body {
+    background-color: black;
 }
-.title {
 
-    flex: 20;
-
+.header {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: gray;
 }
 
 .hamburger {
-    flex: 1;
-
+    border-radius: 8px;
+    background-color: white;
 }
 
-.sidebar{
+.mainContainer {
+    border: 2px solid wheat;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#hamburgerIcon {
+    width: 20px;
+    height: 20px;
+}
+
+h1, h3 {
+    color: wheat;
+    font-weight: 300;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.resultContainer {
+    border: 2px solid white;
+    border-radius: 8px;
+    display: none;
+    margin: 5px;
+}
+.sidebar {
     display: none;
     width: 100%;
     position: relative;
     margin-right: 10px;
-   
 }
+
+.question {
+    text-align: center;
+    color: wheat;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.choices {
+    border-radius: 5px;
+    color: black;
+    font-size: 10px;
+    padding: 5px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.choiceContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.questionContainer {
+    text-align: center;
+    border: 2px solid white;
+    margin: 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.carImage {
+    height: 200px;
+    width: 250px;
+}
+
+.carDescription {
+    font-size: 15px;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 450px) {
     .sidebar {
-        display: none;
-        height: 100%;
-        width: 250px;
-        position: fixed;
+        height: 150%;
+        width: 300px;
+        position: absolute;
         background-color: black;
-     
-
+        border: 1px solid white;
     }
     a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color:wheat;
-        display: block;
+        font-size: 30px;
+        margin: 20px;
     }
-  }
+    .header {
+        border-radius: 16px;
+        padding: 40px;
+        margin: 10px 5px;
+    }
+    
+    .hamburger {
+        padding: 20px;
+        border-radius: 16px;
+    }
+    
+    .mainContainer {
+        border-radius: 16px;
+        margin: 30px;
+        padding: 20px;
+    }
+    
+    #hamburgerIcon {
+        width: 50px;
+        height: 40px;
+    }
+    
+    h1, h3 {
+        font-size: 50px;
+        font-weight: 300;
+
+    }
+    
+    h4 {
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    .resultContainer {
+        margin: 30px;
+        padding: 20px;
+    }
+    
+    .question {
+        font-size: 40px;
+        margin: 20px;
+    }
+    
+    .choices {
+        border-radius: 8px;
+        font-size: 30px;
+        padding: 20px;
+        margin: 30px;
+    }
+    
+    .choiceContainer {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .questionContainer {
+        border-radius: 8px;
+        margin: 30px;
+    }
+    
+    .carImage {
+        height: 500px;
+        width: 700px;
+    }
+    
+    .carDescription {
+        font-size: 40px;
+        text-align: center;
+    }
+}
